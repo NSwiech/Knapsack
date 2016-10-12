@@ -1,10 +1,11 @@
+package Knapsack;
 import java.util.Random;
 
 public class Item {
 	
 	private int value;
 	private int weight;
-	Random randomGenerator = new Random();
+	private Random randomGenerator = new Random();
 	
 	//Standard constructor with fields
 	public Item(int value, int weight) {
@@ -14,8 +15,8 @@ public class Item {
 	
 	//Random item generator
 	public Item() {
-		this.value = randomGenerator.nextInt(10);
-		this.weight = randomGenerator.nextInt(8);
+		this.value = 1 + randomGenerator.nextInt(9);
+		this.weight = 1 + randomGenerator.nextInt(7);
 	}
 	
 	
